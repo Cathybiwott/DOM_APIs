@@ -49,7 +49,7 @@
   color: #ccc;
   margin-right: 5px;
 }
-#products {
+#products1 {
   background-color:  plum;
   display: flex;
   justify-content: space-between;
@@ -93,67 +93,283 @@
   font-weight: bold;
   text-align: center;
 }
-.book {
+/* Style for product card layout */
+
+.classic{
+  display: flex;
+  gap: 60px;
+  margin-left: 30px;
+}
+.headsup img{
+  width: 650px;
+}
+.cam img{
+  width: 620px;
+}
+.playstation{
+  background-color: rgb(175, 120, 139);
+  width: 1350px;
+  margin-left: 30px;
+  height: 270px;
+}
+.smater{
+  margin-left: 90px;
+  padding: 30px;
+  font-size: 55px;
+}
+.design{
+  margin-left: 150px;
+  font-size: 18px;
+}
+.person1 img{
+  margin-left: 1000px;
+  margin-top: -600px;
+  width: 300px;
+  height: 300px;
+}
+.atest{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.testimonials{
+  margin-left: 90px;
+  font-size: 25px;
+  font-style: oblique;
+  margin-top: 30px;
+}
+.smart{
+  font-size: 29px;
+}
+.spans{
+  color: yellow;
+}
+.subscribe{
+  display: flex;
+  gap: 70px;
+  margin-left: 300px;
+  font-size: 20px;
+  font-style: oblique;
+}
+#mailaddress{
+  border-radius: 5px;
+  width: 200px;
+  background-color: yellow;
+}
+.footer{
+  display: flex;
+  gap: 140px;
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  height: 180px;
+  border: solid black;
+}
+.items img{
+  border-radius: 10px;
+  margin-bottom: 1%;
+  border: solid bisque;
+}
+#products{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.book > div {
-  width: 23%;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
+@media all and (max-width: 768px) {
+  /* Styles for small screens */
+
+  .gadget-nav {
+    display: block;
+    width: 100%;
+  }
+
+  .gadget-logo a {
+    font-size: 18px;
+  }
+
+  .gadget-nav-items {
+    flex-direction: column;
+  }
+
+  .gadget-nav-items li {
+    margin-bottom: 10px;
+  }
+
+  .gadget-nav-items li a {
+    font-size: 14px;
+  }
+
+  .gadget-signup a {
+    width: 100%;
+  }
+
+  #search-button {
+    width: 100%;
+  }
+
+  #search-button i {
+    margin-right: 0;
+  }
+
+  #products1 {
+    width: 100%;
+  }
+
+  #button1 {
+    width: 100%;
+  }
+
+  #left {
+    display: none;
+  }
+
+  #right {
+    width: 100%;
+    text-align: center;
+  }
+
+  #accessories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #accessories div {
+    width: 100%;
+  }
+
+  #accessories div i {
+    margin-top: 0;
+  }
+
+  .classic {
+    margin-left: 0;
+  }
+
+  .headsup img {
+    width: 100%;
+  }
+
+  .cam img {
+    width: 100%;
+  }
+
+  .playstation {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .smater {
+    margin-left: 0;
+  }
+
+  .design {
+    margin-left: 0;
+  }
+
+  .person1 img {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .atest {
+    text-align: left;
+  }
+
+  .testimonials {
+    margin-left: 0;
+  }
+
+  .smart {
+    font-size: 24px;
+  }
+
+  .spans {
+    color: black;
+  }
+
+  .subscribe {
+    display: block;
+    width: 100%;
+  }
+
+  #mailaddress {
+    border-radius: 0;
+  }
+
+  .footer {
+    display: block;
+    width: 100%;
+  }
+
+  .items img {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  #products {
+    width: 100%;
+  }
 }
 
-.book > div > div:first-child {
-  position: relative;
-}
+@media all and (max-width: 320px) {
+  /* Styles for extra small screens */
 
-.book > div > div:first-child img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-}
+  .gadget-nav {
+    display: block;
+    width: 100%;
+  }
 
-.book > div > div:first-child h3 {
-  margin: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
+  .gadget-logo a {
+    font-size: 18px;
+  }
 
-.book > div > div:first-child p {
-  margin: 10px;
-  font-size: 14px;
-  color: #999;
-}
+  .gadget-nav-items {
+    flex-direction: column;
+  }
 
-.book > div > div:last-child {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f5f5f5;
-}
+  .gadget-nav-items li {
+    margin-bottom: 10px;
+  }
 
-.book > div > div:last-child h3 {
-  font-size: 18px;
-  font-weight: bold;
-}
+  .gadget-nav-items li a {
+    font-size: 14px;
+  }
 
-.book > div > div:last-child button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  .gadget-signup a {
+    width: 100%;
+  }
 
-.book > div > div:last-child button:hover {
-  background-color: #b5c209;
-}
+  #search-button {
+    width: 100%;
+  }
+
+  #search-button i {
+    margin-right: 0;
+  }
+
+  #products1 {
+    width: 100%;
+  }
+
+  #button1 {
+    width: 100%;
+  }
+
+  #left {
+    display: none;
+  }
+
+  #right {
+    width: 
+
+
+
+
+
+
+
+
 
 
 
